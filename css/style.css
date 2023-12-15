@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  background-color: #062871;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  background-color: #062871;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px rgba(0, 0, 0, 0.6), 5px 5px 12px rgba(0, 0, 0, 0.6); /* inset =>upper side of the box, 5px 5px => horizontal,vertical, 12px=> blur */
+  display: grid;
+  grid-template-columns: repeat(4,70px);
+}
+.heading{
+    text-align: center;
+
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 280px;
+    background-color: #d2def7;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6), 5px 5px 12px rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 40px;
+    text-align: end;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: black;
+}
+input::placeholder{
+  color: black;
+}
+button{
+    cursor: pointer;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #062871;
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+    box-shadow: inset 5px 5px 12px rgba(0, 0, 0, 0.6), 5px 5px 12px rgba(0, 0, 0, 0.6);
+}
